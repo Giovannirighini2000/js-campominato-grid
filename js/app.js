@@ -1,12 +1,13 @@
 // CONTROLLIAMO CHE IL COLLEMENTO FUNZIONI DANDO IL BENVENUTO ALL'UTENTE
 // alert('BENVENUTO A CAMPO MINATO')
 // COLLEGARE IL BOTTONE PLAY AD UN EVENT LISTENER PER FAR APPARIRE LA GRIGLIA DI GIOCO
-
 const btn = document.getElementById("mybuttonplay")
+// COLLEGO IL VALARE CHE INSERISCE L'UTENTE NEL CALCOLARE LA GRIGLIA
+const inputLatoGriglia = document.getElementById("input-lato-griglia")
 // QUANDO L'UTENTE FARE UN CLICK SI CE EVENT LISTENER CON UN FUNZIONE 
 btn.addEventListener("click", function () {
     // CALCOLO LE CELLE DELLE GRIGLIA 
-    let latoGriglia = 10
+    let latoGriglia = inputLatoGriglia.value
     let numeroCelle = latoGriglia * latoGriglia
     console.log(latoGriglia, numeroCelle)
     console.log("IL BOTTONE FUNZIONA");
