@@ -13,6 +13,10 @@ btn.addEventListener("click", function () {
     // COLLEMENTO AL DOM
     const grigliaElement = document.querySelector('.griglia-caselle-di-gioco')
     console.log(grigliaElement)
+    // RIMUOVO TUTTI I NODI FIGLI PRIMA DI RIGENERARE LE CELLE
+    while (grigliaElement.firstChild) {
+        grigliaElement.removeChild(grigliaElement.firstChild)
+    }
     // CREO LE DIV CON UN CICLO FOR E USO APPEND PER METTERLI ALL'INZIO DELLA GRIGLIA
     for (let i = 0; i < numeroCelle; i++) {
         let num = i + 1
