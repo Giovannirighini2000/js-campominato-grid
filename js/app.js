@@ -27,6 +27,7 @@ btn.addEventListener("click", function () {
         grigliaElement.append(cellaElement)
         cellaElement.classList.add("cella", "width");
         cellaElement.append(num)
+        cellaElement.style="width:calc(100% / 10)"
         
     }
     // RIPRENDO IL TAG CELLA CREATO IN PRECEDENZA 
